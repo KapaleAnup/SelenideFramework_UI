@@ -14,4 +14,11 @@ public class UserMangementTests extends TestSetup {
                 .loginToApplication ( loginDetails )
                 .navigateToAdminPage ().addUserDetails ();
     }
+
+    @Test
+    public void verifyJobDeatils(){
+        LoginPage.getInstance ()
+                .loginToApplication ( loginDetails )
+                .navigateToAdminPage ().addJobDetails ();
+    }
 }
