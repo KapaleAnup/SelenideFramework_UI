@@ -25,4 +25,9 @@ public class HomePage {
         this.leftMenuComponent.selectMenuFromLeftMenuBar ( LeftMenuComponentType.LEAVE );
          return new ConfigurePage ().addHolidays ();
     }
+
+    public AdminPage navigateToAdminPage(){
+       this.leftMenuComponent.selectMenuFromLeftMenuBar ( LeftMenuComponentType.ADMIN );
+       return new AdminPage ();
+    }
 }
