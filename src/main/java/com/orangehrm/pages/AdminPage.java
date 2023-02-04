@@ -26,7 +26,9 @@ public class AdminPage {
         return this;
     }
 
-
+    /*
+    New function has been created to handle job related details.
+     */
     public void addJobDetails(){
         JOB_TAB.shouldBe ( enabled ).click ();
         JOB_TITLES_TAB.shouldBe ( enabled ).click ();
