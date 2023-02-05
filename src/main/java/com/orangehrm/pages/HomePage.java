@@ -4,6 +4,9 @@ import com.codeborne.selenide.SelenideElement;
 import com.orangehrm.LeftMenuComponentType;
 import com.orangehrm.pages.pagecomponents.LeftMenuComponent;
 
+/*
+HOME PAGE WILL BE ACT AS A MIDDLEWARE
+ */
 public class HomePage {
 
    private LeftMenuComponent leftMenuComponent;
