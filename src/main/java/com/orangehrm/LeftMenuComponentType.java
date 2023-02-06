@@ -4,7 +4,8 @@ public enum LeftMenuComponentType {
 
     ADMIN ( "Admin" ),
     PIM ( "PIM" ),
-    LEAVE ( "Leave" );
+    LEAVE ( "Leave" ),
+    MYINFO("My Info");
 
     private String menuName;
 

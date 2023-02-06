@@ -33,4 +33,9 @@ public class HomePage {
        this.leftMenuComponent.selectMenuFromLeftMenuBar ( LeftMenuComponentType.ADMIN );
        return new AdminPage ();
     }
+
+    public MyInfo navigateToMyInfoPage(){
+       this.leftMenuComponent.selectMenuFromLeftMenuBar ( LeftMenuComponentType.MYINFO );
+       return new MyInfo ();
+    }
 }
