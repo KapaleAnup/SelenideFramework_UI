@@ -18,6 +18,9 @@ public class ConfigurePage {
     private static final SelenideElement CALENDAR_DATE= $(byXpath ( "//input[@placeholder='yyyy-mm-dd']" ));
     private static final SelenideElement SAVE_BUTTON = $(byText ( "Save" ));
 
+    /*
+     This function will help to manipulate the holiday details.
+     */
     public ConfigurePage addHolidays(){
         CONFIGURE_BUTTON.shouldBe ( enabled ).click ();
         HOLIDAYS_BUTTON.shouldBe ( enabled ).click ();

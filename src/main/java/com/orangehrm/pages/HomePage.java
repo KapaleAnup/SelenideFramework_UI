@@ -4,6 +4,9 @@ import com.codeborne.selenide.SelenideElement;
 import com.orangehrm.LeftMenuComponentType;
 import com.orangehrm.pages.pagecomponents.LeftMenuComponent;
 
+/*
+HOME PAGE WILL BE ACT AS A MIDDLEWARE
+ */
 public class HomePage {
 
    private LeftMenuComponent leftMenuComponent;
@@ -29,5 +32,10 @@ public class HomePage {
     public AdminPage navigateToAdminPage(){
        this.leftMenuComponent.selectMenuFromLeftMenuBar ( LeftMenuComponentType.ADMIN );
        return new AdminPage ();
+    }
+
+    public MyInfo navigateToMyInfoPage(){
+       this.leftMenuComponent.selectMenuFromLeftMenuBar ( LeftMenuComponentType.MYINFO );
+       return new MyInfo ();
     }
 }

@@ -19,7 +19,9 @@ public class AdminPage {
     private static final SelenideElement JOB_ADD_BUTTON = $(byText ( " Add " ));
     private static final SelenideElement ENTER_JOBTITLE= $(byXpath ( "//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']" ));
 
-
+        /*
+         Add user details function will help to add new users into the system.
+         */
     public AdminPage addUserDetails(){
         ADD_BUTTON.shouldBe ( enabled ).click ();
         //USER_ROLE_DROPDOWN.listIterator ( 2 );
